@@ -11,7 +11,7 @@ the details.
 
 ```bash
 # Clone project
-git clone https://github.com/PanJiaChen/vue-element-admin.git
+git clone https://github.com/hilkisahil/tv-base.git
 
 # Install dependencies
 npm install
