@@ -13,7 +13,6 @@ jest.mock('axios', () => ({
       {id:1, name:'Constantine', _embedded: { seasons: [], cast: [] }}
   }))
 }))
-import axios from 'axios'
 
 it('fetches async when component is created', async () => {
   const wrapper = shallowMount(ShowDetail, {localVue, router})

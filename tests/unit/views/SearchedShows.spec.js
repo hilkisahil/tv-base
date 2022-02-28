@@ -15,7 +15,6 @@ jest.mock('axios', () => ({
       [{show:{id:1, schedule:{days:[]}}}, {show:{id:2, schedule:{days:[]}}}]
   }))
 }))
-import axios from 'axios'
 import flushPromises from "flush-promises"
 
 describe('SearchedShows.vue', () => {
@@ -29,7 +28,7 @@ describe('SearchedShows.vue', () => {
   })
 
   it('commit "setSearch" on component create', () => {
-    const wrapper = shallowMount(SearchedShows, { localVue, store, router })
+    shallowMount(SearchedShows, { localVue, store, router })
     // The second argument of the first call to the function was 'robot'
     expect(mutations.setSearch.mock.calls[0][1]).toBe('robot')
   })

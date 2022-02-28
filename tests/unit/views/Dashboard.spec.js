@@ -9,8 +9,6 @@ jest.mock('axios', () => ({
     ]}))
 }))
 
-import axios from 'axios'
-
 it('fetches async when component is created', async () => {
   const wrapper = shallowMount(Dashboard)
   await flushPromises()
