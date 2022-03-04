@@ -12,7 +12,7 @@ describe('TvShowCard.vue', () => {
     const mockMethod = jest.spyOn(TvShowCard.methods, 'redirectToShowDetail')
     const show = { id:2, name: 'Ronin', image:{}, rating:{} }
     const wrapper = shallowMount(TvShowCard, { localVue, router, propsData: {show} })
-    await wrapper.find('div.card-container').trigger('click')
+    await wrapper.find('div.hover-effect').trigger('click')
     expect(mockMethod).toHaveBeenCalledWith(2)
   })
 })

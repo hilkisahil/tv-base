@@ -8,9 +8,5 @@ export default new Vuex.Store({
   state: {
     search: ''
   },
-  mutations,
-  actions: {
-  },
-  modules: {
-  }
+  mutations
 })

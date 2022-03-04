@@ -3,7 +3,7 @@
     <ol class="breadcrumb">
       <template v-for="(item, index) in items">
         <li class="breadcrumb-item" :class="index+1===items.length?'active':''" :key="'item-'+index">
-          <a v-if="item.redirectTo" href="" @click="redirect(item.redirectTo)">{{item.text}}</a>
+          <a v-if="item.redirectTo" @click="redirect(item.redirectTo)" class="anchor-text">{{item.text}}</a>
           <span v-else>{{item.text}}</span>
         </li>
       </template>
@@ -26,3 +26,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.anchor-text{
+  color: #0d6efd;
+  text-decoration: underline;
+  cursor: pointer;
+}
+</style>

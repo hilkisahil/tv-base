@@ -3,7 +3,7 @@
 
     <div v-for="(genre, index) in genres" :key="genre">
       <TvShowList :shows="tvShows[genre]" :genre="genre"/>
-      <hr class="my-4" v-if="index+1 !== genres.length">
+      <hr class="my-lg-4" v-if="index+1 !== genres.length">
     </div>
 
   <ProgressLinear v-if="loading"/>
